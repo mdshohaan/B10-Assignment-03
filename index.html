@@ -50,10 +50,7 @@
               third: "#A4DAC3",
               fourth: "#77AAEA",
             },
-            backgroundImage: {
-              leaf: "url('./images/leaf01.png')",
-              call_to_action: "url('./images/call.jpg')",
-            },
+
             fontFamily: {
               Inter: "Inter",
             },
@@ -69,7 +66,7 @@
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="flex items-center justify-center">
-              <div class="bg-green-400 h-8 w-8 rounded-full text-center">
+              <div class="bg-lime-400 h-8 w-8 rounded-full text-center">
                 <i
                   class="fa-solid fa-arrow-up rotate-45 text-sm text-slate-600 p-1"
                 ></i>
@@ -119,7 +116,7 @@
             </div>
             <div><i class="fa-solid fa-cart-shopping"></i></div>
             <a
-              class="btn bg-green-400 px-6 rounded-full text-black text-lg font-semibold"
+              class="btn bg-lime-400 px-6 rounded-full text-black text-lg font-semibold"
               >Book Consult
               <div class="bg-black h-8 w-8 rounded-full text-center">
                 <i
@@ -331,12 +328,16 @@
 
       <!-- Cards -->
 
-      <main class="grid lg:grid-cols-12 grid-cols-1 gap-4 p-5">
+      <main class="lg:grid lg:grid-cols-12 gap-4 p-5 space-y-1">
         <!-- one -->
         <div
-          class="bg-white border-2 border-slate-200 rounded-xl p-5 flex items-center justify-between space-x-3 col-span-8"
+          class="bg-white border-2 border-slate-200 rounded-xl p-5 lg:flex lg:items-center lg:justify-between space-x-5 col-span-8"
         >
-          <img src="./assets/img1.png" alt="" />
+          <img
+            class="lg:w-[420px] lg:h-[250px] w-full"
+            src="./assets/img1.png"
+            alt=""
+          />
           <div class="space-y-3">
             <h1 class="text-xl font-bold text-black">Commercial</h1>
             <p class="text-sm">
@@ -363,7 +364,11 @@
         <div
           class="col-span-4 bg-white border-2 border-slate-200 rounded-xl p-5"
         >
-          <img src="./assets/img2.png" alt="" />
+          <img
+            class="lg:w-[500px] lg:h-[260px] w-full"
+            src="./assets/img2.png"
+            alt=""
+          />
         </div>
 
         <!-- three -->
@@ -371,15 +376,15 @@
         <div
           class="col-span-3 bg-white border-2 border-slate-200 rounded-xl p-5"
         >
-          <img src="./assets/img3.png" alt="" />
+          <img class="w-full" src="./assets/img3.png" alt="" />
         </div>
 
         <!-- four -->
 
         <div
-          class="flex items-center justify-between space-x-3 col-span-6 bg-white border-2 border-slate-200 rounded-xl p-5"
+          class="lg:flex lg:items-center lg:justify-between space-x-3 col-span-6 bg-white border-2 border-slate-200 rounded-xl p-5"
         >
-          <img src="./assets/img4.png" alt="" />
+          <img class="w-full" src="./assets/img4.png" alt="" />
           <div class="space-y-3">
             <h1 class="text-xl font-bold text-black">Commercial</h1>
             <p class="text-sm">
@@ -405,7 +410,117 @@
         <div
           class="col-span-3 bg-white border-2 border-slate-200 rounded-xl p-5"
         >
-          <img src="./assets/img5.png" alt="" />
+          <img class="w-full" src="./assets/img5.png" alt="" />
+        </div>
+      </main>
+    </section>
+
+    <!-- input type -->
+
+    <section class="bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover">
+      <main class="container mx-auto py-10">
+        <!-- text -->
+        <div class="text-center space-y-5 p-10">
+          <button class="btn bg-green-300 rounded-full font-bold px-10 py-1">
+            <span><i class="fa-solid fa-arrow-right"></i></span>
+            Let's Connect!
+          </button>
+          <h1 class="text-5xl font-extrabold text-black">
+            Let's Discuss Next Project
+          </h1>
+          <p class="text-black text-sm">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <!-- Main Input -->
+
+        <div class="w-10/12 mx-auto grid lg:grid-cols-2 grid-cols-1 gap-8">
+          <div>
+            <input
+              type="text"
+              placeholder="First Name*"
+              class="input input-bordered lg:w-[500px] rounded-full border-none bg-white"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Last Name*"
+              class="input input-bordered lg:w-[500px] rounded-full border-none bg-white"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Phone Name*"
+              class="input input-bordered lg:w-[500px] rounded-full border-none bg-white"
+            />
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Email Name*"
+              class="input input-bordered lg:w-[500px] rounded-full border-none bg-white"
+            />
+          </div>
+          <div>
+            <textarea
+              class="textarea textarea-bordered lg:w-[1150px] lg:h-40 rounded-3xl border-none bg-white mb-5"
+              placeholder="Bio"
+            ></textarea>
+          </div>
+        </div>
+
+        <span class="lg:px-32 p-10">
+          <a
+            class="btn bg-green-400 px-6 rounded-full text-black text-lg font-semibold lg:w-[1150px]"
+            >Send mail
+            <div class="bg-black h-8 w-8 rounded-full text-center">
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-sm text-gray-400 p-1"
+              ></i></div
+          ></a>
+        </span>
+      </main>
+    </section>
+
+    <!-- footer -->
+
+    <section class="bg-black text-gray-300 p-20">
+      <main class="container mx-auto space-y-5">
+        <div class="flex items-center justify-center">
+          <div class="bg-lime-400 h-8 w-8 rounded-full text-center">
+            <i
+              class="fa-solid fa-arrow-up rotate-45 text-sm text-slate-900 p-1"
+            ></i>
+          </div>
+
+          <span class="btn btn-ghost text-4xl font-bold">Rinterio</span>
+        </div>
+        <p class="text-center text-sm font-thin">
+          The barn house captivates with its blend of rustic charm and modern
+          sophistication, featuring weathered wood, sleek metal accents.
+        </p>
+        <div class="py-10 font-thin">
+          <ul class="lg:flex items-center justify-evenly">
+            <li>Home</li>
+            <li>Service</li>
+            <li>Blog</li>
+            <li>About</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div class="flex items-center justify-center">
+          <a
+            class="btn bg-lime-400 px-6 rounded-full text-black text-lg font-semibold text-center border-none"
+            >Book Consult
+            <div class="bg-black h-8 w-8 rounded-full text-center">
+              <i
+                class="fa-solid fa-arrow-up rotate-45 text-sm text-gray-400 p-1"
+              ></i></div
+          ></a>
         </div>
       </main>
     </section>
